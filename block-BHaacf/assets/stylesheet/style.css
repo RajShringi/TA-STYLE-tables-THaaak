@@ -134,7 +134,7 @@ table {
 :root {
   --primary-color: #ed563a;
   --primary-text-color: #232d38;
-  --secondary-text-color: #909090;
+  --secondary-text-color: #747474;
 }
 *,
 *::before,
@@ -147,12 +147,20 @@ body {
   font-size: 16px;
 }
 img {
-  width: 100%;
+  max-width: 100%;
 }
 a {
   text-decoration: none;
 }
-
+p {
+  color: var(--secondary-text-color);
+  margin: 16px 0;
+}
+h5 {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 16px;
+}
 /* Custom Styles */
 .container {
   max-width: 1100px;
@@ -176,9 +184,26 @@ a {
 .py-100 {
   padding: 100px 0;
 }
-
+.py-50 {
+  padding: 50px 0;
+}
 span {
   color: var(--primary-color);
+}
+
+.title {
+  text-align: center;
+  padding: 0px 150px;
+}
+.title h3 {
+  color: var(--primary-text-color);
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.title img {
+  width: 40px;
 }
 /* Flex */
 .flex {
@@ -186,7 +211,12 @@ span {
   justify-content: space-between;
   align-items: center;
 }
-
+.flex-48 {
+  width: 48%;
+}
+.wrap {
+  flex-wrap: wrap;
+}
 .center {
   display: flex;
   justify-content: center;
@@ -271,4 +301,25 @@ header {
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom: 16px;
+}
+
+/* Program */
+.program {
+  margin-bottom: 32px;
+}
+.program p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.program a {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.program article {
+  padding: 10px;
+  background: #fff;
+}
+.blue {
+  color: #3693fe;
 }
