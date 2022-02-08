@@ -172,6 +172,14 @@ a {
   color: var(--primary-color);
   background-color: #fff;
 }
+
+.py-100 {
+  padding: 100px 0;
+}
+
+span {
+  color: var(--primary-color);
+}
 /* Flex */
 .flex {
   display: flex;
@@ -190,7 +198,10 @@ header {
   background-color: rgba(255, 255, 255, 0.2);
   padding: 24px 0px;
   z-index: 100;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .logo {
   text-transform: uppercase;
@@ -219,32 +230,40 @@ header {
 
 /* Hero */
 .hero {
-  height: 80vh;
+  height: 100vh;
+  position: relative;
 }
 .video-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: -2;
 }
 .hero-color {
   background: rgba(22, 30, 46, 0.7);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
 }
 .content {
   text-align: center;
+  position: absolute;
   color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .hero-text {
   margin: 16px 0;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
 }
 .hero-heading {
@@ -252,7 +271,4 @@ header {
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom: 16px;
-}
-.hero-heading span {
-  color: var(--primary-color);
 }
