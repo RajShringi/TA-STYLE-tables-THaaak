@@ -323,3 +323,23 @@ header {
 .blue {
   color: #3693fe;
 }
+
+/* Tagline */
+.tagline {
+  background: url("../media/images/cta-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  color: #fff;
+}
+h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.tagline article {
+  padding: 0 150px;
+}
+.tagline p {
+  color: #fff;
+}
