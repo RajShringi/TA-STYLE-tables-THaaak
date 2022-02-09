@@ -237,6 +237,9 @@ span {
 .items-start {
   align-items: flex-start;
 }
+.justify-start {
+  justify-content: flex-start;
+}
 
 /* Header */
 header {
@@ -435,4 +438,29 @@ td {
   border: 1px solid;
   height: 100px;
   padding: 32px 16px 18px 16px;
+}
+
+/* Trainer */
+.trainer {
+  background-color: #fff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1), -1px -1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 32px;
+}
+.trainer span {
+  font-size: 14px;
+}
+.trainer h4 {
+  font-size: 18px;
+  color: var(--primary-text-color);
+  font-weight: 700;
+}
+.trainer a {
+  color: var(--primary-text-color);
+}
+.trainer li {
+  margin-right: 16px;
+}
+.trainer a:hover {
+  color: var(--primary-color);
 }
