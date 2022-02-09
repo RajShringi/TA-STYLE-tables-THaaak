@@ -387,3 +387,52 @@ h2 {
 .active h5 {
   color: var(--primary-color);
 }
+
+.schedule {
+  background: url("../media/images/schedule-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.schedule .title h3,
+.schedule .title p {
+  color: #fff;
+}
+
+.week {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 100px;
+}
+.day,
+.slash {
+  color: #fff;
+}
+.slash {
+  margin: 0px 8px;
+}
+.day:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.day-active {
+  color: var(--primary-color);
+}
+.justify-center {
+  justify-content: center;
+}
+
+table {
+  margin: 50px auto;
+  border: 1px solid;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  width: 100%;
+}
+th,
+td {
+  border: 1px solid;
+  height: 100px;
+  padding: 32px 16px 18px 16px;
+}
