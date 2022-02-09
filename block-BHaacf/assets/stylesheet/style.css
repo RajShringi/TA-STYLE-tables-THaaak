@@ -177,8 +177,11 @@ h5 {
   font-weight: 400 !important;
 }
 .btn:hover {
-  color: #fff !important;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  /* color: #fff !important;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); */
+  background-color: #fff;
+  color: var(--primary-color);
+  outline: 1px solid var(--primary-color);
 }
 
 .py-100 {
@@ -313,6 +316,7 @@ header {
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+  color: #fff;
 }
 .hero-heading {
   font-size: 80px;
@@ -335,7 +339,7 @@ header {
   font-size: 14px;
 }
 .program article {
-  padding: 10px;
+  padding: 10px 10px 10px 20px;
   background: #fff;
 }
 .blue {
