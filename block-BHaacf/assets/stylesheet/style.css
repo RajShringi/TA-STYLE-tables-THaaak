@@ -464,3 +464,40 @@ td {
 .trainer a:hover {
   color: var(--primary-color);
 }
+/* Footer */
+.footer-hero {
+  position: relative;
+}
+.form-container {
+  position: absolute;
+  width: 50%;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url("../media/images/contact-bg.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 32px;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+  padding: 24px;
+  border: 1px solid #e1e1e1;
+  border-radius: 6px;
+  outline: none;
+}
+form {
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 8px;
+}
+.footer-copyright {
+  padding: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: var(--primary-text-color);
+}
